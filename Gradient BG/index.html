@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="Short Icon" type="image/png" href="V-Shield-Resized.png" > 
+    <script src="script.js" defer></script>
+    <title>Gradient</title>
+</head>
+<body>
+    <div class="container">
+        <div class="gradient_box"></div>
+        <div class="row options">
+            <div class="column_directions">
+                <p class="txt">Directions</p>
+                <div class="select_box">
+                    <select>
+                        <option value="to top">top</option>
+                        <option value="to right top">Right top</option>
+                        <option value="to right">Right</option>
+                        <option value="to right bottom">Right bottom</option>
+                        <option value="to bottom">Bottom</option>
+                        <option value="to left bottom">Left bottom</option>
+                        <option value="to left">Left</option>
+                        <option value="to left top" selected>Left top</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column colors">
+                <p class="txt">Colors</p>
+                <div class="color_inputs">
+                    <input type="color" value="#FF5733">
+                    <input type="color" value="#FFC300">
+                </div>
+            </div>
+        </div>
+        <textarea disabled>background:linear-gradient(to left top,#FF5733,#FFC300);</textarea>
+        <div class="row options">
+            <button class="refresh">Refresh</button>
+            <button class="copy">Copy Code</button>
+        </div>
+    </div>
+</body>
+</html>
